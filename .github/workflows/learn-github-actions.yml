@@ -1,0 +1,20 @@
+name: learn-github-actions
+# trigger
+on: [push]
+# all jobs to get done here
+jobs:
+  # job name
+  check-bats-version:
+    # vm hosted by github (can be set to local)
+    runs-on: ubuntu-latest
+    # each step is a separate action or shell script
+    steps:
+      # installs node, sets node and npm in PATH
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      # execute a command on the vm
+      - run: npm install -g bats
+      # checking the bats version
+      - run: bats -v
