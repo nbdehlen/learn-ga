@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/nbdehlen/learn-ga.git/static/js/main.78007670.js",
-    "index.html": "/nbdehlen/learn-ga.git/index.html",
-    "main.78007670.js.map": "/nbdehlen/learn-ga.git/static/js/main.78007670.js.map"
+    "main.js": "/learn-ga/static/js/main.78007670.js",
+    "index.html": "/learn-ga/index.html",
+    "main.78007670.js.map": "/learn-ga/static/js/main.78007670.js.map"
   },
   "entrypoints": [
     "static/js/main.78007670.js"
