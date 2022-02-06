@@ -47,12 +47,15 @@ function TodoItem({ item }) {
   )
 }
 
-function replaceItemAtIndex(arr, index, newValue) {
-  return [...arr.slice(0, index), newValue, ...arr.slice(index + 1)]
-}
+const replaceItemAtIndex = (arr, index, newValue) => [
+  ...arr.slice(0, index),
+  newValue,
+  ...arr.slice(index + 1),
+]
 
-function removeItemAtIndex(arr, index) {
-  return [...arr.slice(0, index), ...arr.slice(index + 1)]
-}
+const removeItemAtIndex = (arr, index) => [
+  ...arr.slice(0, index),
+  ...arr.slice(index + 1),
+]
 
 export default TodoItem
