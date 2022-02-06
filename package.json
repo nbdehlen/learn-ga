@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build rm && -rf build/static/js/*.js.map",
     "deploy": "gh-pages -d build",
     "gh-pages-clean": "node_modules/gh-pages/bin/gh-pages-clean"
   },
