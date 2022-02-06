@@ -16,5 +16,5 @@ jobs:
           node-version: '14'
           cache: 'npm'
       # execute a command on the vm
-      - run: npm install && npm lint
+      - run: npm install && npm run lint
       # - run: npm test
