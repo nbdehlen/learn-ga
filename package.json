@@ -27,7 +27,7 @@
     "deploy": "gh-pages -d build",
     "gh-pages-clean": "node_modules/gh-pages/bin/gh-pages-clean"
   },
-  "homepage": "https://nbdehlen.github.io/learn-ga",
+  "homepage": "https://github.com/nbdehlen/learn-ga.git",
   "eslintConfig": {
     "extends": [
       "react-app",
