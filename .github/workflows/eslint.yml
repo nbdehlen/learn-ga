@@ -1,20 +1,20 @@
-name: lint
-# trigger
-on: [push]
-# all jobs to get done here
-jobs:
-  # job name
-  lint:
-    # vm hosted by github (can be set to local)
-    runs-on: ubuntu-latest
-    # each step is a separate action or shell script
-    steps:
-      # installs node, sets node and npm in PATH
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      # execute a command on the vm
-      - run: npm install && npm run lint
-      # - run: npm test
+# name: lint
+# # trigger
+# on: [push]
+# # all jobs to get done here
+# jobs:
+#   # job name
+#   lint:
+#     # vm hosted by github (can be set to local)
+#     runs-on: ubuntu-latest
+#     # each step is a separate action or shell script
+#     steps:
+#       # installs node, sets node and npm in PATH
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: '14'
+#           cache: 'npm'
+#       # execute a command on the vm
+#       - run: npm install && npm run lint
+#       # - run: npm test
